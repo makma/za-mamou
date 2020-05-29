@@ -8,7 +8,6 @@ import Wizard from '../components/Wizard'
 class IndexRoute extends React.Component {
   render() {
     const routeData = this.props
-    const items = []
     const title = routeData.data.kontentItemSiteMetadata.elements.title.value
     const subtitle = routeData.data.kontentItemSiteMetadata.elements.subtitle.value
 

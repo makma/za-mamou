@@ -152,6 +152,47 @@ figcaption {
     }
 }
 
+.wizard {
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.wizard-actions {
+    display: flex;
+    justify-content: left;
+}
+
+.btn {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: lightgray;
+}
+
+.btn--indented-left {
+    margin-left: 80px;
+}
+
+.footer {
+    position: fixed;
+    height: 20px;
+    width: 100%;
+    bottom: 0;
+    padding: 0 40px 10px 40px !important;
+    background-color: white;
+    z-index: 100;
+}
+
 @include breakpoint-sm {
     figure.float-left,
     figure.float-right {

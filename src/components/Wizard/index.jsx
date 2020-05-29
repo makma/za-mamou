@@ -73,8 +73,8 @@ export const Wizard = () => {
   const unable_to_enter = results.filter(result => result.system.codename === 'unable_to_enter')[0];
 
   return (
-    <>
-      <StepWizard>
+    <div className="wizard">
+      <StepWizard >
         <Question question={duration} target={{yes: 2, no: 3}} />
         <Question question={citizenship} target={{yes: 4, no: 5}} />
         <Question question={residence} target={{yes: 15, no: 2}} />
@@ -93,7 +93,7 @@ export const Wizard = () => {
         <Result result={quarantine} />
         <Result result={unable_to_enter} />
       </StepWizard>
-    </>
+    </div>
   )};
 
 export default Wizard

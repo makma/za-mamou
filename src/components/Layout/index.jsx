@@ -12,6 +12,9 @@ class Layout extends React.Component {
           <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon" />
         </Helmet>
         {children}
+        <div className="footer">
+          Created with passion🍻 by <a href="https://twitter.com/_bayotop" target="_blank">bayo</a> and <a href="https://twitter.com/martinmakarsky" target="blank">makma🚀</a>.
+        </div>
       </div>
     )
   }
