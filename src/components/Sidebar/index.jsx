@@ -44,14 +44,12 @@ const sidebar = ({ isHomePage }) => {
   )
 
   const menu = data.kontentItemMenu
-  const copyright = data.kontentItemSiteMetadata.elements.copyright.value
 
   return (
     <div className="sidebar">
       <div className="sidebar__inner">
         <div>
           <Menu data={menu} />
-          <p className="sidebar__copyright">{copyright}</p>
         </div>
       </div>
     </div>
