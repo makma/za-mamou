@@ -12,11 +12,8 @@ class NotFoundRoute extends React.Component {
           <div className="content">
             <div className="content__inner">
               <div className="page">
-                <h1 className="page__title">NOT FOUND</h1>
+                <h1 className="page__title">{this.props.data.kontentItemSiteMetadata.elements.page_not_found_message.value}</h1>
                 <div className="page__body">
-                  <p>
-                    {this.props.data.kontentItemSiteMetadata.elements.page_not_found_message.value}
-                  </p>
                 </div>
               </div>
             </div>
