@@ -152,6 +152,10 @@ figcaption {
     }
 }
 
+.wizard {
+    overflow: hidden;
+}
+
 @include breakpoint-sm {
     figure.float-left,
     figure.float-right {
