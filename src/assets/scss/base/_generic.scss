@@ -189,7 +189,8 @@ figcaption {
     bottom: 0;
     padding: 0 40px 10px 40px !important;
     background-color: white;
-    z-index: 99 vw;
+    z-index: 99;
+    width: 99 vw;
 }
 
 @include breakpoint-sm {
