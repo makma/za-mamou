@@ -175,6 +175,10 @@ figcaption {
     cursor: pointer;
 }
 
+.btn:hover {
+    background-color: lightgray;
+}
+
 .btn--indented-left {
     margin-left: 80px;
 }
