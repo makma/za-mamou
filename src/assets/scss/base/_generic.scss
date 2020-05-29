@@ -160,6 +160,7 @@ figcaption {
 .wizard-actions {
     display: flex;
     justify-content: left;
+    flex-wrap: wrap;
 }
 
 .btn {
@@ -179,8 +180,8 @@ figcaption {
     background-color: lightgray;
 }
 
-.btn--indented-left {
-    margin-left: 80px;
+.btn--indented-right {
+    margin-right: 80px;
 }
 
 .footer {
