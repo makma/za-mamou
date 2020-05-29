@@ -68,6 +68,8 @@ export const Wizard = () => {
   const foreigner_8 = questions.filter(questions => questions.system.codename === 'foreigner_8')[0];
   const foreigner_9 = questions.filter(questions => questions.system.codename === 'foreigner_9')[0];
   const foreigner_10 = questions.filter(questions => questions.system.codename === 'foreigner_1')[0];
+  const country_of_origin = questions.filter(question => question.system.codename === 'country_of_origin')[0];
+  const slovak_residency = questions.filter(question => question.system.codename === 'slovak_residency')[0];
   const no_limitations = results.filter(result => result.system.codename === 'no_limitations')[0];
   const quarantine = results.filter(result => result.system.codename === 'limitations_quarantine')[0];
   const unable_to_enter = results.filter(result => result.system.codename === 'unable_to_enter')[0];
@@ -76,19 +78,21 @@ export const Wizard = () => {
     <div className="wizard">
       <StepWizard isLazyMount={true}>
         <Question question={duration} target={{yes: 2, no: 3}} />
-        <Question question={citizenship} target={{yes: 4, no: 5}} />
-        <Question question={residence} target={{yes: 15, no: 2}} />
-        <Question question={return_in_48} target={{yes: 15, no: 16}} />
-        <Question question={foreigner_1} target={{yes: 4, no: 6}} />
-        <Question question={foreigner_2} target={{yes: 4, no: 7}} />
-        <Question question={foreigner_3} target={{yes: 4, no: 8}} />
-        <Question question={foreigner_4} target={{yes: 4, no: 9}} />
-        <Question question={foreigner_5} target={{yes: 4, no: 10}} />
-        <Question question={foreigner_6} target={{yes: 4, no: 11}} />
-        <Question question={foreigner_7} target={{yes: 4, no: 12}} />
-        <Question question={foreigner_8} target={{yes: 4, no: 13}} />
-        <Question question={foreigner_9} target={{yes: 4, no: 14}} />
-        <Question question={foreigner_10} target={{yes: 4, no: 17}} />
+        <Question question={citizenship} target={{yes: 6, no: 7}} />
+        <Question question={residence} target={{yes: 17, no: 2}} />
+        <Question question={slovak_residency} target={{yes: 5, no: 18}} />
+        <Question question={country_of_origin} target={{yes: 6, no: 18}} />
+        <Question question={return_in_48} target={{yes: 18, no: 17}} />
+        <Question question={foreigner_1} target={{yes: 6, no: 8}} />
+        <Question question={foreigner_2} target={{yes: 6, no: 9}} />
+        <Question question={foreigner_3} target={{yes: 6, no: 10}} />
+        <Question question={foreigner_6} target={{yes: 6, no: 11}} />
+        <Question question={foreigner_5} target={{yes: 6, no: 12}} />
+        <Question question={foreigner_6} target={{yes: 6, no: 13}} />
+        <Question question={foreigner_7} target={{yes: 6, no: 14}} />
+        <Question question={foreigner_8} target={{yes: 6, no: 15}} />
+        <Question question={foreigner_9} target={{yes: 6, no: 16}} />
+        <Question question={foreigner_10} target={{yes: 6, no: 19}} />
         <Result result={no_limitations} />
         <Result result={quarantine} />
         <Result result={unable_to_enter} />
