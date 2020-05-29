@@ -69,7 +69,7 @@ export const Wizard = () => {
   const foreigner_7 = questions.filter(questions => questions.system.codename === 'foreigner_7')[0];
   const foreigner_8 = questions.filter(questions => questions.system.codename === 'foreigner_8')[0];
   const foreigner_9 = questions.filter(questions => questions.system.codename === 'foreigner_9')[0];
-  const foreigner_10 = questions.filter(questions => questions.system.codename === 'foreigner_1')[0];
+  const foreigner_10 = questions.filter(questions => questions.system.codename === 'foreigner_10')[0];
   const no_limitations = results.filter(result => result.system.codename === 'no_limitations')[0];
   const quarantine = results.filter(result => result.system.codename === 'limitations_quarantine')[0];
   const unable_to_enter = results.filter(result => result.system.codename === 'unable_to_enter')[0];
