@@ -17,6 +17,10 @@ class IndexRoute extends React.Component {
           <Helmet>
             <title>{title}</title>
             <meta name="description" content={subtitle} />
+            <meta property="og:title" content="Za mamou - môžem ísť na Slovensko?" />
+            <meta property="og:type" content="website" />
+            <meta property="og:url" content="https://zamamou.sk/" />
+            <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Flag_of_Slovakia.svg/800px-Flag_of_Slovakia.svg.png" />
           </Helmet>
           <Sidebar isHomePage />
           <div className="content">

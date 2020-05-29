@@ -16,6 +16,10 @@ class PageTemplate extends React.Component {
           <Helmet>
             <title>{`${title} - ${subtitle}`}</title>
             <meta name="description" content={pageTemplateData.data.kontentItemPage.elements.meta_description.value} />
+            <meta property="og:title" content="Za mamou - môžem ísť na Slovensko?" />
+            <meta property="og:type" content="website" />
+            <meta property="og:url" content="https://zamamou.sk/" />
+            <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Flag_of_Slovakia.svg/800px-Flag_of_Slovakia.svg.png" />
           </Helmet>
           <PageTemplateDetails {...pageTemplateData} />
         </div>
