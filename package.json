@@ -27,7 +27,8 @@
   "dependencies": {
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "react-step-wizard": "^5.3.2"
   },
   "devDependencies": {
     "@kentico/gatsby-source-kontent": "6.0.0",

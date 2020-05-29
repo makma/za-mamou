@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Sidebar from '../components/Sidebar'
+import Wizard from '../components/Wizard'
 
 class IndexRoute extends React.Component {
   render() {
@@ -20,7 +21,7 @@ class IndexRoute extends React.Component {
           </Helmet>
           <Sidebar isHomePage />
           <div className="content">
-            <div className="content__inner">{items}</div>
+            <div className="content__inner"><Wizard></Wizard></div>
           </div>
         </div>
       </Layout>
