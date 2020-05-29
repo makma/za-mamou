@@ -74,7 +74,7 @@ export const Wizard = () => {
 
   return (
     <div className="wizard">
-      <StepWizard >
+      <StepWizard isLazyMount={true}>
         <Question question={duration} target={{yes: 2, no: 3}} />
         <Question question={citizenship} target={{yes: 4, no: 5}} />
         <Question question={residence} target={{yes: 15, no: 2}} />
