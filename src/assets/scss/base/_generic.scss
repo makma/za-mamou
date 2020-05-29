@@ -157,6 +157,28 @@ figcaption {
     margin-bottom: 50px;
 }
 
+.wizard-actions {
+    display: flex;
+    justify-content: left;
+}
+
+.btn {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.btn--indented-left {
+    margin-left: 80px;
+}
+
 .footer {
     position: fixed;
     height: 20px;
