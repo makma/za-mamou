@@ -1,20 +1,56 @@
 import React from 'react'
 import StepWizard from 'react-step-wizard';
+import { useStaticQuery } from "gatsby"
 
 
-class Wizard extends React.Component {
+export const Wizard = () => {
 
-  render() {
+  const allQuestions  = useStaticQuery(
+    graphql`
+      query MyQuery {
+          allKontentItemQuestion {
+            nodes {
+              elements {
+                title {
+                  value
+                }
+                text {
+                  value
+                }
+                description {
+                  value
+                }
+                answers {
+                  value {
+                    name
+                  }
+                }
+              }
+              system {
+                codename
+              }
+            }
+          }
+      }
+    `
+  );
+  
+    const questions = allQuestions.allKontentItemQuestion.nodes
+    const durationQuestion = questions.filter(question => question.system.codename === 'duration')[0]
+
     return (
-      <StepWizard
-        isHashEnabled
-      >
-       
-    </StepWizard>
-    ); <Question1 hashKey={'Question1'} />
-        <Question2 hashKey={'Question2'} />
-  }
-}
+      <>
+      	{durationQuestion.elements.title.value}
+        {durationQuestion.elements.text.value}
+        {durationQuestion.elements.description.value}
+        <StepWizard
+          isHashEnabled
+        >
+          <Question1 hashKey={'Question1'} />
+          <Question2 hashKey={'Question2'} />
+        </StepWizard>
+      </>
+    )};
 
 const Question1 = props => {
     return (
