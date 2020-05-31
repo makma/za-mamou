@@ -21,6 +21,7 @@ class IndexRoute extends React.Component {
             <meta property="og:type" content="website" />
             <meta property="og:url" content="https://zamamou.sk/" />
             <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Flag_of_Slovakia.svg/800px-Flag_of_Slovakia.svg.png" />
+            <meta name="google-site-verification" content="xMZ1qw13tFUPLLUvhH1JcqoZvoOlsUbONdvBWjhTlRo" />
           </Helmet>
           <Sidebar isHomePage />
           <div className="content">
